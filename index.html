@@ -1,4 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Scraper</title>
+</head>
+<body>
+<h1>Web Scraper</h1>
 <form action="scrape" method="GET">
-  <input type="url" name="url" placeholder="Enter URL">
+  <label for="url">Enter URL:</label><br>
+  <input type="url" id="url" name="url" placeholder="https://example.com" required><br><br>
+  <input type="checkbox" id="scrapeTitle" name="scrapeTitle" value="true">
+  <label for="scrapeTitle">Scrape Title</label><br>
+  <input type="checkbox" id="scrapeLinks" name="scrapeLinks" value="true">
+  <label for="scrapeLinks">Scrape Links</label><br>
+  <input type="checkbox" id="scrapeImages" name="scrapeImages" value="true">
+  <label for="scrapeImages">Scrape Images</label><br><br>
   <button type="submit">Scrape</button>
 </form>
+</body>
+</html>
